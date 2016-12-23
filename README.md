@@ -1,7 +1,7 @@
 Perseus
 ====
 
-A simple script - and Dockerfile, to easily maintain and run a very light image of the latests Fedora system for the sole purpose of running Wildfly AS local build (but could run, in fact, anykind of Java-based Maven build). The main reason beyond this automation is that Wildfly build (mvn clean install) fires up instance of an app server binding on a local port - which make it uneasy to fire several build, on the same system, at the same time. With the scripts provided with this project, you can easily wrap around the build into a container.
+A simple set of scripts - and Dockerfile, to easily maintain and run a very light image of the latests Fedora system for the sole purpose of running Wildfly AS local build (but could run, in fact, anykind of Java-based Maven build). The main reason beyond this automation is that Wildfly build (mvn clean install) fires up instance of an app server binding on a local port - which make it uneasy to fire several build, on the same system, at the same time. With the scripts provided with this project, you can easily wrap around the build into a container.
 
 How to
 ====
