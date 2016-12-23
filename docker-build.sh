@@ -32,6 +32,7 @@ if [ "$(getenforce | grep -e Enforcing -c)" -gt 0 ]; then
 fi
 
 docker run --user builder --workdir /workspace -ti \
+          -e MAVEN_HOME='/maven' -e JAVA_HOME='/java' -e LOCAL_REPO_DIR="/workspace/.m2/repository" \
            -v "${DOCKER_WORKSPACE_MOUNT}" \
            -v "${DOCKER_MAVEN_HOME_MOUNT}" -v "${DOCKER_MAVEN_M2_HOME_MOUNT}" \
            -v "${DOCKER_JAVAZI_MOUNT}" -v "${DOCKER_JAVA_HOME_MOUNT}" "${DOCKER_IMAGE}" '/bin/bash'
