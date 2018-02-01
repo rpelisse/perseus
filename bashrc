@@ -14,5 +14,5 @@ WHITE="$(tput setaf 7)"
 PURPLE="$(tput setaf 5)"
 CYAN="$(tput setaf 6)"
 
-PS1='\[${LIGHT_GREEN}\]\u@\[${BLUE}\]builder \[${WHITE}\]\W${PURPLE}${WHITE}]\$\[$NB\] '
+PS1='\[${LIGHT_GREEN}\]\u@\[${RED}\]builder \[${WHITE}\]\W${PURPLE}${WHITE}]\$\[$NB\] '
 
