@@ -20,7 +20,7 @@ readonly DOCKER_IMAGE=${DOCKER_IMAGE:-'builder:latest'}
 
 readonly DOCKER_JAVAZI_MOUNT=${DOCKER_JAVAZI_MOUNT:-'/usr/share/javazi-1.8/:/usr/share/javazi-1.8/:ro'}
 readonly DOCKER_WORKSPACE_MOUNT="${WORKSPACE}:/workspace:rw"
-readonly DOCKER_MAVEN_M2_HOME_MOUNT="${M2_HOME}:/workspace/.m2/repository:rw"
+readonly DOCKER_MAVEN_M2_HOME_MOUNT="${M2_HOME}:/workspace/.m2/:rw"
 readonly DOCKER_JAVA_HOME_MOUNT="${JAVA_HOME}:/java:ro"
 
 if [ "$(getenforce | grep -e Enforcing -c)" -gt 0 ]; then
