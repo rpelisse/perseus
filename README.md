@@ -54,5 +54,3 @@ Troubleshooting
 
 * SELinux does not allow Docker to mount file system (or at least not anyone) - so run without SELinux disabled (but at your own peril !)
 ** I would love to see a command or a SE policy to workaround that being contributed :)
-* MAVEN_HOME is expected to be self contained (ie unzip from an archive) - so check that your MAVEN is not the one provided by the system (so no '$ yum install maven')
-
