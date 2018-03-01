@@ -15,14 +15,14 @@ used by the next script.
 
 2) Launch the container:
 
-    $ ./docker-build.sh <path-to-project-repo>
+    $ ./perseus <path-to-project-repo>
 
 
 This will fire a docker instance, with the project *mounted* on it along with the required mvn (MAVEN_HOME) and java (JAVA_HOME) folder.
 
 Ex:
 
-    rpelisse@tiberius perseus.git (master)]$ ./docker-build.sh ~/Repositories/redhat/issues/JBEAP-6449/wildfly.git/
+    rpelisse@tiberius perseus.git (master)]$ ./perseus ~/Repositories/redhat/issues/JBEAP-6449/wildfly.git/
     builder@builder ~]$ java -version
     openjdk version "1.8.0_111"
     OpenJDK Runtime Environment (build 1.8.0_111-b16)
