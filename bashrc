@@ -2,8 +2,6 @@ export MAVEN_HOME=/maven
 export HOME=/workspace
 export JAVA_HOME=/java
 
-export M2_HOME=
-
 export PATH=${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${PATH}
 
 # colors
