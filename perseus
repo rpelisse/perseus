@@ -7,7 +7,7 @@ readonly DOCKER_USER=${DOCKER_USER:-'builder'}
 readonly BUILD_COMMAND=${2:-'/bin/bash'}
 
 if [ -z "${WORKSPACE}" ]; then
-  echo "Not Provided workspace to mount and build from"
+  echo "No provided workspace to mount and build from. Abort."
   exit 1
 fi
 
